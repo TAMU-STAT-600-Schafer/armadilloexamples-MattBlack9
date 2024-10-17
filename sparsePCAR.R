@@ -21,5 +21,5 @@ sparsePCAR <- function(X, Vstart, lambda, tol){
     error <- abs(new_obj - old_obj)
     old_obj <- new_obj
     }
-  
+  return(list(U = U, V = V, error = error))
   }
